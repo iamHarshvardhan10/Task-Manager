@@ -1,5 +1,5 @@
 import { app } from '../firebase.config'
-import { getDocs, query, collection, orderBy, where } from 'firebase/firestore'
+import { getDocs, query, collection, orderBy, where} from 'firebase/firestore'
 
 
 export const getAllTask = async (firestoreDb, userId) => {
@@ -10,6 +10,7 @@ export const getAllTask = async (firestoreDb, userId) => {
 
     return tasks.docs.map((doc) => doc.data());
 }
+
 
 
 
